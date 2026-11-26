@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Excise Label Verification System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Excise Label Verification System</h1>
+
+    <p>Upload an excise label image to verify its details.</p>
+
+    <!-- Image Upload Section -->
+    <div class="upload-container">
+
+        <h2>Upload Label Image</h2>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept=".png,.jpg,.jpeg,.bmp,image/*"
+        >
+
+        <!-- Image Preview -->
+        <div class="preview-container">
+            <img id="imagePreview" src="" alt="Selected Label Preview">
+        </div>
+
+        <br>
+
+        <button id="verifyButton" type="button">
+            Verify Label
+        </button>
+
+    </div>
+
+    <!-- Verification Results Section -->
+    <div class="results-container" id="resultsContainer">
+
+        <h2>Verification Results</h2>
+
+        <div id="verificationStatus"></div>
+
+        <div id="resultDetails"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
